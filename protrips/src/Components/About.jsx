@@ -54,6 +54,7 @@ const forminputs = useFormik({
 
 
   return(
+    <div className="container">
     <form onSubmit={forminputs.handleSubmit}>
       {state && Object.keys(forminputs.touched).length===4 && Object.keys(forminputs.errors).length===0? <div className="result">Registration Successfull!</div>:null}
       <div>
@@ -74,6 +75,7 @@ const forminputs = useFormik({
       </div>
       <button type="submit" onClick={record} className="submit">Submit</button>
     </form>
+    </div>
   )
 }
 export default About
